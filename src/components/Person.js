@@ -6,7 +6,7 @@ const Person = (props) => {
     return (
         <div>
             <h1>{ props.lastName }, { props.firstName }</h1>
-            <p>Age: { props.age } </p>
+            <p>Age: {birthday} </p>
             <p>Hair color: { props.hair } </p>
             <button onClick = { (event) => setBirthday(birthday + 1)}>Birthday button for {props.firstName} {props.lastName}</button>
         </div>
@@ -14,10 +14,3 @@ const Person = (props) => {
 }
 
 export default Person;
-
-
-
-
-// const onClick = () => {
-//     setBirthday(birthday + 1)
-// }
