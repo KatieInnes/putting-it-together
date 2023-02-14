@@ -8,9 +8,16 @@ const Person = (props) => {
             <h1>{ props.lastName }, { props.firstName }</h1>
             <p>Age: { props.age } </p>
             <p>Hair color: { props.hair } </p>
-            <button onClick = { (event) => setBirthday(birthday + 1)}>Birthday button for {props.firstName}</button>
+            <button onClick = { (event) => setBirthday(birthday + 1)}>Birthday button for {props.firstName} {props.lastName}</button>
         </div>
     )
 }
 
 export default Person;
+
+
+
+
+// const onClick = () => {
+//     setBirthday(birthday + 1)
+// }
